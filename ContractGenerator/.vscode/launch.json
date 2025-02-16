@@ -1,0 +1,31 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Server",
+      "program": "${workspaceFolder}/backend/server.js",
+      "env": {
+        "NODE_ENV": "development",
+        "PORT": 8080,
+        "DEV_MODE": "development",
+        "MONGO_URL": "mongodb://127.0.0.1:27017/AppWeb",
+        "JWT_SECRET": "HGFHGEAD1212432432"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Generate PDF",
+      "program": "${workspaceFolder}/backend/pdf.js",
+      "env": {
+        "NODE_ENV": "development",
+        "PORT": 8080,
+        "DEV_MODE": "development",
+        "MONGO_URL": "mongodb://127.0.0.1:27017/AppWeb",
+        "JWT_SECRET": "HGFHGEAD1212432432"
+      }
+    }
+  ]
+}
